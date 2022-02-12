@@ -2,11 +2,17 @@
     "root": true,
     "parser": "@typescript-eslint/parser",
     "plugins": [
-      "@typescript-eslint"
+      "@typescript-eslint",
+      "arithmetic"
     ],
     "extends": [
       "eslint:recommended",
       "plugin:@typescript-eslint/eslint-recommended",
       "plugin:@typescript-eslint/recommended"
-    ]
+    ],
+    "rules": { 
+      "no-console": 0,
+      "arithmetic/calc": "warn"
+    }
+  
   }
