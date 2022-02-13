@@ -1,26 +1,22 @@
 "use strict";
-exports.__esModule = true;
-var readline_sync_1 = require("readline-sync");
-function main() {
-    var firststr = (0, readline_sync_1.question)('What is your first number: \n');
-    var secstr = (0, readline_sync_1.question)('What is your second number: \n');
-    var opperator = (0, readline_sync_1.question)('What would you like to do? Press a for addition, m for multiplication, s for subtraction, and d for division ');
-    var firstnum = parseInt(firststr, 10);
-    var secondnum = parseInt(secstr, 10);
-    if (opperator == 'a') {
-        console.log(firstnum + secondnum);
-    }
-    else if (opperator == 'm') {
-        console.log(firstnum * secondnum);
-    }
-    else if (opperator == 's') {
-        console.log(firstnum - secondnum);
-    }
-    else if (opperator == 'd') {
-        console.log(firstnum / secondnum);
-    }
-    else {
-        console.log('That is not a valid opperation, please restart the program and use one of the given opperators');
-    }
+function sum(a, b) {
+    return a + b;
 }
-main();
+
+function multiplication(a, b) {
+    return a * b;
+}
+
+function division(a, b) {
+    return a / b;
+}
+
+function sub(a, b) {
+    return a - b;
+}
+module.exports = {
+    sum: sum,
+    sub: sub,
+    division: division,
+    multiplication: multiplication
+};
