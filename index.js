@@ -1,18 +1,18 @@
 "use strict";
-function sum(a, b) {
-    return a + b;
+function sum(num1, num2) {
+    return num1 + num2;
 }
-
-function multiplication(a, b) {
-    return a * b;
+module.exports = sum;
+function multiplication(num1, num2) {
+    return num1 * num2;
 }
-
-function division(a, b) {
-    return a / b;
+module.exports = multiplication;
+function division(num1, num2) {
+    return num1 / num2;
 }
-
-function sub(a, b) {
-    return a - b;
+module.exports = division;
+function sub(num1, num2) {
+    return num1 - num2;
 }
 module.exports = {
     sum: sum,

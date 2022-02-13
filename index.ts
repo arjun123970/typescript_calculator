@@ -1,22 +1,22 @@
-function sum(a:number,b:number) {
-        return a + b;
+function sum(num1:number,num2:number) {
+        return num1 + num2;
       }
       module.exports = sum;
 
 
- function multiplication(a:number,b:number) {
-    return a * b;
+ function multiplication(num1:number,num2:number) {
+    return num1* num2;
       }
       module.exports = multiplication;
 
-function division(a:number,b:number) {
-    return a/b;
+function division(num1:number,num2:number) {
+    return num1/num2;
       }
       module.exports = division;
     
 
-function sub(a:number, b:number) {
-    return a - b;
+function sub(num1:number, num2:number) {
+    return num1- num2;
       }
       module.exports = {
           sum,
