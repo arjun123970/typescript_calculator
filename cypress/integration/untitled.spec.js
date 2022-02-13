@@ -1,4 +1,4 @@
-const { sum, sub, multiplication, division} = require('C:/Users/Chandra/Desktop/typescript_calculator/index.js');
+const { sum, sub, multiplication, division} = require('./index.js');
 describe('Calculator functions test', () => {
     it('This will test out the operation functions on my calculator program', () => {
         expect(sum(1, 2)).to.equal(3);
